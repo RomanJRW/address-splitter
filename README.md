@@ -7,7 +7,7 @@ curl -X POST http://localhost:8080/address -H 'Content-Type: application/json' -
 ```
 which would return the response:
 ```
-{"street":"big road","houseNumber":"405"}
+{"street":"big road","housenumber":"405"}
 ```
 
 It's a simple non-regex solution, whereby it first tries to identify the house number by looking for any numerical components of a provided address. Then, it checks if either or both of its neighbouring components are significant and could also make up part of the house number.
